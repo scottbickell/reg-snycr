@@ -4,11 +4,11 @@ subject: Sony Care
 description: hidden preview line
 ---
 <spacer size="10"></spacer>
-<container>
+<container class="main-container">
   <row class="collapse">
     <columns small="12" noexpander>
       <img src="{{root}}assets/img/sony-care-banner.jpg" class="show-for-large" alt="Sony Care">
-      <img src="../assets/img/sony-care-banner-mobile.jpg" class="hide-for-large" alt="Sony Care">
+      <img src="{{root}}assets/img/sony-care-banner-mobile.jpg" class="hide-for-large" alt="Sony Care">
     </columns>
   </row>
   <row>
@@ -20,14 +20,15 @@ description: hidden preview line
   </row>
   <row>
     <columns small="12">
-      <div class="prod-details">
+      <div class="purchase-details">
         <spacer size="10"></spacer>
-        <strong>Purchased</strong> July 10, 2019 <strong>Order ID</strong> abcde12345
+        <strong>Purchased</strong> July 10, 2019 <div class="mobile-hardbreak"></div><strong>Order ID</strong>
+        abcde12345
         <spacer size="10"></spacer>
       </div>
     </columns>
   </row>
-  
+
   <row>
     <columns small="12" class="message-body">
       <spacer size="20"></spacer>
@@ -35,19 +36,25 @@ description: hidden preview line
         - we've got your back.</p>
       <p>Please <a href="#" target="_blank">click here</a> to activate your plan.</p>
       <spacer size="10"></spacer>
-      <center><button href="#" class="radius">ACTIVATE YOUR PLAN &raquo;</button></center>
+      <!-- <center><button href="#" class="radius">ACTIVATE YOUR PLAN &raquo;</button></center>
+      <spacer size="10"></spacer> -->
+
+      <center><button href="#" class="radius warning">ACTIVATE YOUR PLAN &raquo;</button></center>
       <spacer size="10"></spacer>
-      <img src="{{root}}assets/img/icon-user.png" class="your-plan-details small-float-center" alt="Your plan details">
-      <spacer size="15"></spacer>
-      <p>Plan Description: Protect Plus<br>
-        One-Time Activation Code: ABCDE12345<br>
-        Contract Number: 1234abcde<br>
-        Purchased on: 00/00/00</p>
-      <p>The full details of your plan can be found <a href="#" target="_blank" rel="noopener noreferrer">here</a>.</p>
+      <div class="your-plan-details">
+        <img src="{{root}}assets/img/icon-user.png" class="your-plan-details-icon" alt="Your plan details">
+        <spacer size="15"></spacer>
+        <p>Plan Description: Protect Plus<br>
+          One-Time Activation Code: ABCDE12345<br>
+          Contract Number: 1234abcde<br>
+          Purchased on: 00/00/00</p>
+        <p>The full details of your plan can be found <a href="#" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+      </div>
       <spacer size="10"></spacer>
       <p><strong>Welcome to the Sony family.</strong></p>
       <p>Sincerely,<br>Sony Customer Service<br>
-        1-555-555-5555</p>
+        <a href="tel:+15555555555" class="telephone">1-555-555-5555</a></p>
     </columns>
   </row>
   <row>

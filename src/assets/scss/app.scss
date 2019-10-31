@@ -11,6 +11,10 @@ a[x-apple-data-detectors] {
   line-height: inherit !important;
 }
 
+table.main-container {
+  box-shadow: 1px 1px 5px 3px #e5e5e5;
+}
+
 td {
   hyphens: none;
   -moz-hyphens: none;
@@ -23,6 +27,8 @@ a:visited,
 a:hover {
   color: #ffa400;
 }
+
+// <br class="mobile-hardbreak">
 
 h1,
 h2,
@@ -42,7 +48,7 @@ p {
   line-height: 1.5;
 }
 
-.prod-details {
+.purchase-details {
   border: 1px solid #cccccc;
   text-align: center;
 }
@@ -51,7 +57,11 @@ p {
   text-decoration: underline;
 }
 
-.your-plan-details {
+a.telephone {
+  color: #737373;
+}
+
+.your-plan-details-icon {
   width: 50%;
 }
 
@@ -85,6 +95,11 @@ table.button table td {
   font-size: 11px;
 }
 
+.mobile-hardbreak {
+  display: inline-block;
+  width: 10px;
+}
+
 
 @media only screen and (max-width: 670px) {
   table.body .columns {
@@ -92,8 +107,23 @@ table.button table td {
     padding-right: 15px !important;
   }
 
-  img.your-plan-details {
+  img.your-plan-details-icon {
     width: 250px !important;
+  }
 
+  .purchase-details {
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+  }
+
+  .mobile-hardbreak {
+    display: block;
+    height: 10px;
+  }
+
+  .your-plan-details {
+    border: 1px solid #cccccc;
+    padding: 20px;
   }
 }
