@@ -1,0 +1,99 @@
+@import 'settings';
+@import 'foundation-emails';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+td {
+  hyphens: none;
+  -moz-hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #ffa400;
+}
+
+h1,
+h2,
+h3 {
+  color: #0092a7;
+}
+
+h1 {
+  text-align: center;
+}
+
+.dark-blue {
+  color: #0092a7;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.prod-details {
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+
+.message-body a {
+  text-decoration: underline;
+}
+
+.your-plan-details {
+  width: 50%;
+}
+
+.show-column {
+  background: #e5e5e5;
+}
+
+table.button table td a {
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+table.button table td {
+  text-align: center !important;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0 !important;
+}
+
+.footer {
+  color: #737373;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #737373;
+}
+
+.footer p {
+  font-size: 11px;
+}
+
+
+@media only screen and (max-width: 670px) {
+  table.body .columns {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  img.your-plan-details {
+    width: 250px !important;
+
+  }
+}
