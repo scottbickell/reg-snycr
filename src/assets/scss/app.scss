@@ -11,9 +11,10 @@ a[x-apple-data-detectors] {
   line-height: inherit !important;
 }
 
-table.main-container {
-  box-shadow: 1px 1px 5px 3px #e5e5e5;
-}
+// table.main-container {
+//   box-shadow: 1px 1px 5px 3px #e5e5e5;
+//   margin-top: -100px;
+// }
 
 td {
   hyphens: none;
@@ -26,6 +27,10 @@ a,
 a:visited,
 a:hover {
   color: #ffa400;
+}
+
+p.description {
+  line-height: 1.8;
 }
 
 // <br class="mobile-hardbreak">
@@ -98,11 +103,6 @@ table.button table td {
 .mobile-hardbreak {
   display: inline-block;
   width: 10px;
-}
-
-.desktop-expanded-banner {
-  // background: orange;
-  // height: 390px;
 }
 
 @media only screen and (max-width: 670px) {
